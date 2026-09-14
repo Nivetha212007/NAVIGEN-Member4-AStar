@@ -1,25 +1,52 @@
-# NAVIGEN Member 4 — Path Planning (Phase 1)
+# NAVIGEN Member 4 — A* Path Planning & Dynamic Replanning
 
-Phase 1 only: a 20x20 grid with obstacles, Start, and Goal.
+## Overview
 
-A* path planning is **not** included yet. Confirm that this grid window looks correct before Phase 2.
+Member 4 is responsible for **UGV path planning** using the A* algorithm.
 
-## How to run on Windows 11
+The system finds a safe route for the UGV from a Start position to a Goal position while avoiding obstacles.
 
-Open **Command Prompt** or **PowerShell**.
+It also supports **dynamic obstacle detection and path replanning**.
+
+---
+
+## Completed Phases
+
+### Phase 1 — Grid Map
+
+- 20x20 simulated environment
+- Static obstacles
+- Start position
+- Goal position
+- Grid visualization
+
+### Phase 2 — A* Path Planning
+
+- A* search algorithm
+- Manhattan distance heuristic
+- Priority queue using Python `heapq`
+- Finds the shortest safe path
+- Avoids obstacles
+
+### Phase 3 — UGV Simulation
+
+- UGV follows the calculated A* path
+- Animated movement from Start to Goal
+- Displays the planned route
+
+### Phase 4 — Dynamic Obstacle Replanning
+
+- UGV starts travelling toward the Goal
+- A new obstacle can be placed during navigation
+- UGV stops when the obstacle is detected
+- A* recalculates a new safe route
+- UGV continues using the new route
+
+---
+
+## Interactive Judge Demo
+
+The file:
 
 ```text
-cd C:\Users\Administrator\NAVIGEN_MEMBER4
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-```
-
-## Expected output
-
-- A text map in the terminal (`S` = Start, `G` = Goal, `#` = obstacle, `.` = free).
-- A Matplotlib window titled **NAVIGEN – A* UGV Path Planning**.
-- A screenshot saved at `outputs/phase1_grid.png`.
-
-Close the plot window to finish the program.
+click_obstacle_demo.py
