@@ -48,6 +48,8 @@ It also supports **dynamic obstacle detection and path replanning**.
 ## Interactive Judge Demo
 
 cd C:\Users\Administrator\NAVIGEN_MEMBER4
+
 venv\Scripts\activate
+
 python click_obstacle_demo.py
 
