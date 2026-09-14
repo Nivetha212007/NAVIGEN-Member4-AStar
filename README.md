@@ -39,6 +39,7 @@ It also supports **dynamic obstacle detection and path replanning**.
 - UGV starts travelling toward the Goal
 - A new obstacle can be placed during navigation
 - UGV stops when the obstacle is detected
+
 - A* recalculates a new safe route
 - UGV continues using the new route
 
@@ -49,4 +50,14 @@ It also supports **dynamic obstacle detection and path replanning**.
 The file:
 
 ```text
-click_obstacle_demo.py
+click_obstacle_demo.py 
+---
+
+## How to Run in Command Prompt
+
+Open Command Prompt and run:
+
+### 1. Go to the project folder
+
+```cmd
+cd C:\Users\Administrator\NAVIGEN_MEMBER4
