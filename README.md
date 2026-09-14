@@ -47,17 +47,7 @@ It also supports **dynamic obstacle detection and path replanning**.
 
 ## Interactive Judge Demo
 
-The file:
-
-```text
-click_obstacle_demo.py 
----
-
-## How to Run in Command Prompt
-
-Open Command Prompt and run:
-
-### 1. Go to the project folder
-
-```cmd
 cd C:\Users\Administrator\NAVIGEN_MEMBER4
+venv\Scripts\activate
+python click_obstacle_demo.py
+
