@@ -47,9 +47,26 @@ It also supports **dynamic obstacle detection and path replanning**.
 
 ## Interactive Judge Demo
 
-cd C:\Users\Administrator\NAVIGEN_MEMBER4
+## Interactive Judge Demo
 
-venv\Scripts\activate
+The file `click_obstacle_demo.py` provides an interactive demonstration.
 
-python click_obstacle_demo.py
+During navigation:
 
+1. The UGV starts moving from Start to Goal.
+2. Click on a free grid cell.
+3. The clicked cell becomes a dynamic obstacle.
+4. The UGV stops.
+5. A* calculates a new safe path.
+6. The UGV continues toward the Goal.
+
+---
+
+# How to Run on Windows
+
+## Step 1 — Clone the Repository
+
+Open **Command Prompt** and run:
+
+```cmd
+git clone https://github.com/Nivetha212007/NAVIGEN-Member4-AStar.git
