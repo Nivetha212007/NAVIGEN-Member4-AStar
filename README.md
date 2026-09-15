@@ -47,7 +47,6 @@ It also supports **dynamic obstacle detection and path replanning**.
 
 ## Interactive Judge Demo
 
-## Interactive Judge Demo
 
 The file `click_obstacle_demo.py` provides an interactive demonstration.
 
