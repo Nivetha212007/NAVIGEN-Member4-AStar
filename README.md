@@ -69,3 +69,35 @@ Open **Command Prompt** and run:
 
 ```cmd
 git clone https://github.com/Nivetha212007/NAVIGEN-Member4-AStar.git
+
+##Step 2 — Enter the project folder
+cd NAVIGEN-Member4-AStar
+
+Step 3 — Create a virtual environment
+python -m venv venv
+Step 4 — Activate the virtual environment
+venv\Scripts\activate
+
+You should see (venv) at the beginning of the command line.
+
+##Step 5 — Install required libraries
+pip install -r requirements.txt
+
+
+##Step 6 — Run the basic A* demo
+python main.py
+
+##Step 7 — Run UGV simulation
+python simulate_ugv.py
+
+
+##Step 8 — Run dynamic obstacle replanning
+python phase4_dynamic_replanning.py
+
+
+##Step 9 — Run interactive obstacle demo
+python click_obstacle_demo.py
+
+
+##Step 10 — Run coordinate-based judge demo
+python judge_demo.py
